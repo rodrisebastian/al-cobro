@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <span>AlCobro</span>
+  <span class="spacer"></span>
+  @if (usuario()) {
+    <span>{{ usuario()?.email }} ({{ usuario()?.rol }})</span>
+  }
+  <button mat-button (click)="logout()">Salir</button>
+</mat-toolbar>
+
+<div class="content">
+  <h2>Dashboard</h2>
+  <p>Acá van a ir las métricas: cuentas por estado, gestiones del día, próximos vencimientos.</p>
+</div>
